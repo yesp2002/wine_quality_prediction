@@ -32,9 +32,11 @@ train_score = regr.score(X_train, y_train) * 100
 test_score = regr.score(X_test, y_test) * 100
 
 # Write scores to a file
-with open("metrics.txt", 'w') as outfile:
-        outfile.write("Training variance explained: %2.1f%%\n" % train_score)
-        outfile.write("Test variance explained: %2.1f%%\n" % test_score)
+# with open("metrics.txt", 'w') as outfile:
+#         outfile.write("Training variance explained: %2.1f%%\n" % train_score)
+#         outfile.write("Test variance explained: %2.1f%%\n" % test_score)
+
+print("Training variance gotten")
 
 
 ##########################################
@@ -82,3 +84,5 @@ plt.xlim((2.5,8.5))
 
 plt.tight_layout()
 plt.savefig("residuals.png",dpi=120) 
+
+print("Executed successfully total")
