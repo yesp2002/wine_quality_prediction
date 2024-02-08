@@ -39,6 +39,8 @@ test_score = regr.score(X_test, y_test) * 100
 print("Training variance explained: %2.1f%%\n" % train_score)
 print("Test variance explained: %2.1f%%\n" % test_score)
 
+print("Training variance gotten")
+
 
 ##########################################
 ##### PLOT FEATURE IMPORTANCE ############
@@ -85,3 +87,5 @@ plt.xlim((2.5,8.5))
 
 plt.tight_layout()
 plt.savefig("residuals.png",dpi=120) 
+
+print("Executed successfully total")
